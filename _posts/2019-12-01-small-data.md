@@ -220,12 +220,12 @@ Looking at residuals won't always suggest an issue, and therefore knowing the co
 
 Our new [datasets](https://gist.github.com/seankross/a412dfbd88b3db70b74b) suggests that modeling our `mpg` as quadratic function of `hp` increase our $R^2$
 
-<p class="center">
+<p align ="center">
     <img src="https://vincent-maladiere.github.io/images/linear.png" width="500" height="200"/>
 </p>
 $R^2$ value is $0.62$
 
-<p class="center">
+<p align="center">
     <img src="https://vincent-maladiere.github.io/images/quadratic.png" width="500" height="200"/>
 </p>
 $R^2$ value is $0.75$
