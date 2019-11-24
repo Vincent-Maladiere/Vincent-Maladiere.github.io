@@ -249,7 +249,7 @@ Back with our kid.iq dataset, we find that
 so they have the same slop. However the plot below suggests higher slope when `mom_hs`$=0$.
 
 <p align="center">
-<img src="https://vincent-maladiere.github.io/images/need_interaction.png" width="400", height="200"/>
+<img src="https://vincent-maladiere.github.io/images/need_interaction.png" width="400" height="200"/>
 </p>
 
 When changing the value of one covariate affects the coefficient of another, we need an interaction term in the model
