@@ -218,15 +218,41 @@ On average, fitted values are closer to their mean than the covariates are to th
 The linear regression model projects the outcomes into a hyperplane, determined by the covariates. This fit might have systematic problems because the relationship between Y and X is inherently nonlinear. 
 Looking at residuals won't always suggest an issue, and therefore knowing the context is critical.
 
-Our new [datasets](https://gist.github.com/seankross/a412dfbd88b3db70b74b) suggests that modeling our `mpg` as quadratic function of `hp` increase our $R^2$
+Our new [datasets](https://gist.github.com/seankross/a412dfbd88b3db70b74b) suggests that modeling our `mpg` as quadratic function of `hp` increase our $R^2$.
+We now have
 
-<p align ="center">
-    <img src="https://vincent-maladiere.github.io/images/linear.png" width="500" height="200"/>
+$$Y_i \approx \hat{\beta}_0 + \hat{\beta}_1 X_i + \hat{\beta}_2 X_i^2$$
+
++ Linear
+<p align="center">
+<img src="https://vincent-maladiere.github.io/images/linear.png" width="800" height="400"/>
 </p>
 $R^2$ value is $0.62$
 
++ Quadratic
 <p align="center">
-    <img src="https://vincent-maladiere.github.io/images/quadratic.png" width="500" height="200"/>
+<img src="https://vincent-maladiere.github.io/images/quadratic.png" width="800" height="400"/>
 </p>
 $R^2$ value is $0.75$
 
+<details>
+<summary>See notebook here</summary>
+<script src="https://gist.github.com/Vincent-Maladiere/b032af321fcceb36423685f4f6510274.js"></script>
+</details>
+<br>
+
+Back with our kid.iq dataset, we find that
+
+`mom_iq`$=0 \implies$ `kid_score` $\approx 25.73 + 0.56 .$`mom_iq`<br>
+`mom_iq`$=1 \implies$ `kid_score` $\approx 31.68 + 0.56 .$`mom_iq`
+
+so they have the same slop. However the plot below suggests higher slope when `mom_hs`$=0$.
+
+<p align="center">
+<img src="https://vincent-maladiere.github.io/images/need_interaction.png" width="400", height="200"/>
+</p>
+
+When changing the value of one covariate affects the coefficient of another, we need an interaction term in the model
+So our model with 2 covariates becomes 
+
+$$Y_i \approx \hat{\beta}_0+\hat{\beta}_1 X_{i1}+\hat{\beta}_2 X_{i2}$$
