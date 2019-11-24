@@ -167,13 +167,57 @@ Note that both nominator and denominator are sample variance of $Y$ and $\hat{Y}
 
 Let's plot the residuals for our model against fitted values $\hat{Y}_i$ (not the original outcomes $Y_i$)
 
-![residuals against fitted values](./images/residuals_vs_fitted.png =200x80)
+<p align="center">
+<img src="https://vincent-maladiere.github.io/images/residuals_vs_fitted.png" width="500" height="200"/>
+</p>
 
 <details>
 <br>
 <summary>Hat tip to <a href="https://emredjan.github.io/blog/2017/07/11/emulating-r-plots-in-python/">Emre Can</a> for his very neat implementation and overview of plotting techniques..</summary>
 <script src="https://gist.github.com/Vincent-Maladiere/6fb9b7c2ae87822ddc68ca12125aa421.js"></script>
-_______________________________________________________________________________________
 </details>
-<br>
 
++ We might have non-linear relationships here because residuals are not equally spread around a horizontal line, this line has an angle.
++ In case of size effect (not enough data) or overfitting, our multiple-$R^2$ can be high even when the model fits poorly.
++ On the contrary, a model with a low $R^2$ can [still be useful](https://www.theanalysisfactor.com/small-r-squared/) to find a small relationship if the model is significant.
+
+We assumed that we had $p<n$ and $X$ has *full rank* $p+1$. What happens this is not the case?
++ If $X$ doesn't have full rank, then $X^TX$ is not invertible, thus the optimal $\hat{\beta}$ minimizing the SSE is not unique (we have collinearity, the model is nonindentifiable).
++ If $p \approx n$, then the number of covariates is of a similar order to the number of observation (high dimensional regime).
++ If $p+1 \geq n$ we have enough degrees of freedom to perfectly fit the data (in general when $p \geq$ the model is non identifiable). Is this a good model? 
+
+
+## 1-6 Interpreting regression coefficients
+
+Suppose we completely believe our model. We might say:
++ A $1$ unit change in $X_{ij}$ is associated with a $\hat{\beta}_j$ change in $Y_i$.
++ Given (X_{i1}, ..., X_{ip}), we predict $Y_i$ will be $\hat{\beta}_0 + \sum_j\hat{\beta}_jX_{ij}$.
+
+This section focus on helping you understand conditions under which these statements are ok, and when they aren't.
+
+Recall `mom_work` is a canditional variable that ranges from $1$ to $4$. Does it make sense to build a model where:
+`kid_score`$\approx \hat{\beta}_0+\hat{\beta}_1$ `mom_work` ? Not really.
+> The regression model tries to estimate the conditional average of the outcome, given the covariates
+
+We can get more intuition for the regression coefficients by looking at the case where there is only one continous covariate:
+$$Y_i \approx \hat{\beta}_0+\hat{\beta}_1 X_i$$ (note we dropped the second index $j$ on $X_i$)
+
+It can be shown that
+
+$$\hat{\beta}_0=\bar{Y}-\hat{\beta}\bar{X};\;\hat{\beta}_1=\hat{\rho}\frac{\hat{\sigma}_Y}{\hat{\sigma}_X}$$
+
+where $-1 \leq \hat{\rho} \leq 1$ is the sample correlation
+
+$$\hat{\rho}=\frac{\frac{1}{n}\sum^n_{i=1}(X_i-\bar{X})(Y_i-\bar{Y})}{\hat{\sigma_X}\hat{\sigma_Y}}$$
+
+Thus, if $X_i$ is $a.\hat{\sigma}_X$ larger than $\bar{X}$, then the fitted value $\hat{Y}_i$ will only be $\hat{\rho}.a.\hat{\sigma}_X$ larger than $\bar{Y}$.
+On average, fitted values are closer to their mean than the covariates are to their mean (this is called mean reversion).
+
+## 1-7 Beyond linearity
+
+The linear regression model projects the outcomes into a hyperplane, determined by the covariates. This fit might have systematic problems because the relationship between Y and X is inherently nonlinear. 
+Looking at residuals won't always suggest an issue, this is why knowing the context is critical.
+
+<p align="center">
+<img src="https://vincent-maladiere.github.io/images/quadratic_residuals.png" width="500" height="200"/>
+</p>
