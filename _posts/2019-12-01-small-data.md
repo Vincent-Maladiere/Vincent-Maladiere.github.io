@@ -246,13 +246,115 @@ Back with our kid.iq dataset, we find that
 `mom_iq`$=0 \implies$ `kid_score` $\approx 25.73 + 0.56 .$`mom_iq`<br>
 `mom_iq`$=1 \implies$ `kid_score` $\approx 31.68 + 0.56 .$`mom_iq`
 
-so they have the same slop. However the plot below suggests higher slope when `mom_hs`$=0$.
+so they have the same slope. However the plot below suggests higher slope when `mom_hs`$=0$.
 
 <p align="center">
 <img src="https://vincent-maladiere.github.io/images/need_interaction.png" width="400" height="200"/>
 </p>
 
-When changing the value of one covariate affects the coefficient of another, we need an interaction term in the model
+When changing the value of one covariate affects the coefficient of another, we need an interaction term in the model.
 So our model with 2 covariates becomes 
 
-$$Y_i \approx \hat{\beta}_0+\hat{\beta}_1 X_{i1}+\hat{\beta}_2 X_{i2}$$
+$$Y_i \approx \hat{\beta}_0+\hat{\beta}_1 X_{i1}+\hat{\beta}_2 X_{i2}+\hat{\beta}_{1:2}X_{i1}X_{i2}$$
+
+This time we have
+
+`mom_iq`$=0 \implies$ `kid_score` $\approx -11.48 + 0.97 .$`mom_iq`<br>
+`mom_iq`$=1 \implies$ `kid_score` $\approx 39.79 + 0.48 .$`mom_iq`
+
+<p align="center">
+<img src="https://vincent-maladiere.github.io/images/with_interaction.png" width="400" height="200"/>
+</p>
+
+You should try to include interaction terms with
++ A covariate has a large effect on the fitted value (high coefficient).
++ Covariates that describe groups of data (`mom_hs` or `mom_work` in this example).
+
+## 1-8 Beyond minimizing SSE
+
+Adding covariates to a model can only make $R^2$ increase, because each additional covariate 
+carries even little "explanations to the variance of the outcome variable".
+
+However, we sometimes want our regression to pick out coefficients that are "meaningful".
+We achieve this by regularizing the objective function. Instead of minimizing sse, we 
+minimize
+
++ Ridge regression
+
+$$SSE + \lambda\sum^p_{j=1}\|\hat{\beta}_j\|^2$$
+
+where $\lambda > 0$. It penalizes $\hat{\beta}$ vectors with "large" norms
+
++ Lasso
+
+$$SSE + \lambda \sum^p_{j=1}\|\hat{\beta}_j\|$$
+
+where $\lambda > 0$. In practice, the resulting coefficient vector will be "sparser"
+than unregularized coefficient vector.
+
+Regularized regression is often used for "kitchen sink" data analysis (including every covariate you can find, 
+then run a regularized regression to pick out which covariates are important).
+
+This raises the issue of overfitting and hasty generalizations, because the more independent 
+variables are included in a regression, the greater the probability that one or more will 
+be found to be significant while in fact having no causal effect on 
+the outcome.
+
+Also, linear regression can be very sensitive to outliers because SSE 
+$(Y_i-\hat{Y}_i)^2$ is quadratic. Thus, small changes in $Y_i$ leads 
+to large changes in SSE.
+
+Thus, instead of SSE, one might minimize the sum of *absolute deviations*
+
+$$\sum^n_{i=1}\|Y_i-\hat{Y}_i\|$$
+
+Ridge and Lasso are also less vulnerable to outliers.
+
+## 1-9 Data transformations
+
++ Logarithmic transformations
+
+Regression can sometimes leads to a model where $\hat{Y}_i$ is negative for some
+$X_i$. This can be problematic for positive outcome, like a weight or a price.
+
+So one approach is 
+
+$$log Y_i \approx \hat{\beta}_0 + \sum^p_{j=1}\hat{\beta}_jX_{ij}$$
+
+So
+
+$$Y_i \approx e^{\hat{\beta}_0}\prod^p_{j=1}e^{\hat{\beta}_j X_{ij}}$$
+
+See the housing unit vs income by county below
+
+<p align="center">
+<img src="https://vincent-maladiere.github.io/images/nolog.png">
+</p>
+
+which becomes
+
+<p align="center">
+<img src="https://vincent-maladiere.github.io/images/log.png">
+</p>
+
+Here $\hat{\beta}_1=1.14%$, so a $1%$ higher median household is associated with
+a $1.14%$ higher number of housing units, in average.
+
++ Centering
+  
+We remove the mean
+
+$$\tilde{X}_{ij}=X_{ij}-\bar{X}_j$$
+
+so the model is now
+
+$$Y_i \approx \hat{\beta}_0+\sum^p_{j=1}\hat{\beta}_j\tilde{X}_ij$$
+
++ Standardize 
+
+$$\tilde{X}_{ij}=\frac{X_{ij}-\bar{X}_j}{\hat{\sigma}_j}$$
+
+This gives all covariate a normalized dispersion.
+
+
+
