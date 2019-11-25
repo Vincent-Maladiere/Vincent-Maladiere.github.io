@@ -22,7 +22,6 @@ This series aims at mastering the skills that will help you for "small" data ana
 
 Note that all the code was in R langage in the original papers and that I converted it into Python.
 
-<br>
 # 1 Linear Regression
 ---
 
