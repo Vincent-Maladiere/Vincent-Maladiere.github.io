@@ -423,7 +423,7 @@ While this migth be ok for small datasets, this is clearly not ok for larger one
 # Up Next 
 ------
 
-I hope that this summary gave you a nice overview about regression techniques and that this series have helped you so far.
+I hope that this summary gave you a nice overview about regression techniques and that this series has helped you so far.
 If you didn't quench your regression thirst, have a look at [this state of this art on ALS](https://endymecy.gitbooks.io/spark-ml-source-analysis/content/%E6%8E%A8%E8%8D%90/papers/Large-scale%20Parallel%20Collaborative%20Filtering%20the%20Netflix%20Prize.pdf).
 Next episode will cover prediction. Stay tuned!
 
