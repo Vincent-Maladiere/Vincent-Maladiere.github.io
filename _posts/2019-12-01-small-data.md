@@ -3,26 +3,32 @@ title: 'Small Data'
 date: 2019-12-01
 permalink: /posts/2019/12/small-data/
 tags:
-  - ?
+  - machine learning
+  - linear regression 
+  - ridge 
+  - lasso
+  - OLS
+  - ALS
+  - residuals
 ---
-
-[Work In Progress]
 
 # Small Intro
 ---
 
 Hello reader, this article is the short version of a [Stanford course](http://web.stanford.edu/~rjohari/teaching/notes/). 
-I wrote it after an extensive reading of this course so that you don't have to.
 
-The amount of data we collect is gargantuous (Facebook posts, tweets, medical tests...) and it often arriving faster than we can store and analyze it. 
-> "Big" data can't be analyzed on a single machine.
-On the contrary, small data can be analyzed and collected on a single machine (even though we now have 64GB of RAM at home).
+This is first article of the small data series. I wrote it after an extensive reading of this course so that you don't have to.
+This series aims at mastering the skills that will help you for "small" data analysis and thus for any data analysis.
 
-This article aims at mastering the skills that will help you for "small" data analysis and thus for any data analysis.
+Note that all the code was in R langage is the original papers and that I converted into Python.
 
 <br>
 # 1 Linear Regression
 ---
+
+The amount of data we collect is gargantuous (Facebook posts, tweets, medical tests...) and it often arriving faster than we can store and analyze it. 
+> "Big" data can't be analyzed on a single machine.
+On the contrary, small data can be analyzed and collected on a single machine (even though we now have 64GB of RAM at home).
 
 Let's focus on data from [child.iq](http://www.stat.columbia.edu/~gelman/arm/examples/child.iq/).
 
@@ -191,7 +197,7 @@ We assumed that we had $p<n$ and $X$ has *full rank* $p+1$. What happens this is
 
 Suppose we completely believe our model. We might say:
 + A $1$ unit change in $X_{ij}$ is associated with a $\hat{\beta}_j$ change in $Y_i$.
-+ Given (X_{i1}, ..., X_{ip}), we predict $Y_i$ will be $\hat{\beta}_0 + \sum_j\hat{\beta}_jX_{ij}$.
++ Given $(X_{i1}, ..., X_{ip})$, we predict $Y_i$ will be $$\hat{\beta}_0 + \sum_j \hat{\beta}_j X_{ij}$$.
 
 This section focus on helping you understand conditions under which these statements are ok, and when they aren't.
 
@@ -328,17 +334,17 @@ $$Y_i \approx e^{\hat{\beta}_0}\prod^p_{j=1}e^{\hat{\beta}_j X_{ij}}$$
 See the housing unit vs income by county below
 
 <p align="center">
-<img src="https://vincent-maladiere.github.io/images/nolog.png">
+<img src="https://vincent-maladiere.github.io/images/nolog.png" width="400" height="200"/>
 </p>
 
 which becomes
 
 <p align="center">
-<img src="https://vincent-maladiere.github.io/images/log.png">
+<img src="https://vincent-maladiere.github.io/images/log.png" width="400" height="200"/>
 </p>
 
-Here $\hat{\beta}_1=1.14%$, so a $1%$ higher median household is associated with
-a $1.14%$ higher number of housing units, in average.
+Here $\hat{\beta}_1=1.14%$, so a $1$% higher median household is associated with
+a $1.14$% higher number of housing units, in average.
 
 + Centering
   
@@ -355,6 +361,74 @@ $$Y_i \approx \hat{\beta}_0+\sum^p_{j=1}\hat{\beta}_j\tilde{X}_ij$$
 $$\tilde{X}_{ij}=\frac{X_{ij}-\bar{X}_j}{\hat{\sigma}_j}$$
 
 This gives all covariate a normalized dispersion.
+
+## 1-10 Alternating Least Square (ALS)
+
+Let's broaden the scope of this article with an extension from another [Stanford course](http://stanford.edu/~rezab/classes/cme323/S15/notes/lec14.pdf).
+
+We shed light now on the common use case of personalized recommendation of new products to users. We know the rates that users have given to certain items,
+and our task is to predict their rating for the rest of these items.
+
+A popular approach is to use Matrix Factorisation. We describe both $m$ users and $n$ products with vectors of size $k$ 
+
+$$X=(x_{uj})_{1 \leq u \leq n,\; 1 \leq j \leq k} \\ Y=(y_{ij})_{1 \leq i \leq m,\; 1 \leq j \leq k}$$
+
+To predict user $u$ rating for item $i$ we simply compute
+
+$$r_{ui} \approx x^T_u y_i$$
+
+So our goal is to estimate the complete rating matrix 
+
+$$R=X^TY$$
+
+We need to find optimal $X$ and $Y$ in order to minimizes least square error of the observed ratings
+
+$$min_{XY}\sum_{r_{ui}observed}(r_{ui}-x^T_u y_i)^2 + \lambda(\sum_u\|x_u\|^2+\sum_i\|y_i\|^2)$$
+
+Notice that this objective is non-convex because of the $x_u^T y_i$ term. 
+In fact its NP-hard to optimize (the travelling salesman is another exemple of NP-hard problem). We can use gradiant descent as an approximation, 
+but it turns out to be too slow. 
+
+Instead, we use ALS: we fix $Y$ and optimize $X$, then fix $X$ and optimize $Y$, and repeat until convergence. 
+
+<details>
+<summary>Let's describe our ALS</summary>
+<br>
+$Initialize\;X, Y$.
+<br>
+$while\;not\;convergence:$
+<br>
+    $\;\;\;\;\;\;\;\;for\;u=1...n\;:$
+    <br>
+      $\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;x_u=(\sum_{r_{ui}\in r_{u*}}y_i y_i^T + \lambda I_k)^{-1} (\sum_{r_{ui} \in r_{u*}} r_{ui}y_i)$
+<br>
+    $\;\;\;\;\;\;\;\;for\;i=1...m\;:$
+    <br>
+      $\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;y_i=(\sum_{r_{ui}\in r_{*i}}x_u x_u^T + \lambda I_k)^{-1} (\sum_{r_{ui} \in r_{*i}} r_{ui}x_u)$
+<br><br>
+Updates will cost:
+<ul>
+<li>$O(n_u k^2 + k^3)$ for each $y_i$ (where $n_u$ are the number of items rated by user $u$)</li>
+<li>$O(n_i k^2 + k^3)$ for each $x_u$ (where $n_i$ are the number of users that have rated item $i$)</li>
+</ul>
+
+_______________________________________________________________________________________
+</details>
+<br>
+
+Now that we have $X$ and $Y$, we need to compute $R$. Simply predicting $r_{ui} \approx x_u^T y_i$ will cost $O(nmk)$, if we estimate every user-item pair.
+
+While this migth be ok for small datasets, this is clearly not ok for larger ones, so we need instead Distributed ALS, which is detailed in the previously mentionned course.
+
+
+# Up Next 
+------
+
+I hope that this summary gave you a nice overview about regression techniques and that this series have helped you so far.
+If you didn't quench your regression thirst, have a look at [this state of this art on ALS](https://endymecy.gitbooks.io/spark-ml-source-analysis/content/%E6%8E%A8%E8%8D%90/papers/Large-scale%20Parallel%20Collaborative%20Filtering%20the%20Netflix%20Prize.pdf).
+Next episode will cover prediction. Stay tuned!
+
+
 
 
 
