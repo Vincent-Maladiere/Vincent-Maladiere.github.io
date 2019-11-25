@@ -20,7 +20,7 @@ Hello reader, this article is the short version of a [Stanford course](http://we
 This is first article of the small data series. I wrote it after an extensive reading of this course so that you don't have to.
 This series aims at mastering the skills that will help you for "small" data analysis and thus for any data analysis.
 
-Note that all the code was in R langage is the original papers and that I converted into Python.
+Note that all the code was in R langage in the original papers and that I converted it into Python.
 
 <br>
 # 1 Linear Regression
