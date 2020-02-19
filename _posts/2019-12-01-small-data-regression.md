@@ -12,15 +12,17 @@ tags:
   - residuals
 ---
 
-# Small Intro
+# Small Intro & Aknowledgment
 ---
 
-Hello reader, this article is the short version of a [Stanford course](http://web.stanford.edu/~rjohari/teaching/notes/). 
+Hello reader, this article is a short version of the MS&E 226 [Stanford course](http://web.stanford.edu/~rjohari/teaching/notes/)
+of Ramesh Johari, who kindly let me use his materials, so all credits go to him.
 
-This is first article of the small data series. I wrote it after an extensive reading of this course so that you don't have to.
+This is the first part of the small data series. I wrote it after an extensive reading of this course so that you don't have to.
 This series aims at mastering the skills that will help you for "small" data analysis and thus for any data analysis.
 
-Note that all the code was in R langage in the original papers and that I converted it into Python.
+Note that all the code was written in R langage in the original papers and that I converted it into Python.
+
 
 # 1 Linear Regression
 ---
@@ -29,7 +31,20 @@ The amount of data we collect is gargantuous (Facebook posts, tweets, medical te
 > "Big" data can't be analyzed on a single machine.
 On the contrary, small data can be analyzed and collected on a single machine (even though we now have 64GB of RAM at home).
 
-Let's focus on data from [child.iq](http://www.stat.columbia.edu/~gelman/arm/examples/child.iq/).
+We will use the [child.iq](http://www.stat.columbia.edu/~gelman/arm/examples/child.iq/) data throughout this article.
+We will see which are the most important variables to explain child's IQ thanks to inputs like mother's IQ, 
+mother's workload during child's first years of life and so on.
+
+[1-1 summerizing a sample](#1-1-summerizing-a-sample)<br>
+[1-2 modeling relationships](#1-2-modeling-relationships)<br>
+[1-3 linear regression model](#1-3-linear-regression-model)<br>
+[1-4 ordinary least square](#1-4-ordinary-least-square)<br>
+[1-5 residuals and R2](#1-5-residuals-and-R2)<br>
+[1-6 Interpreting regression coefficients](#1-6-interpreting-regression-coefficients)<br>
+[1-7 Beyond linearity](#1-7-beyond-linearity)<br>
+[1-8 Beyond minimizing MSE: Ridge and Lasso Penalization](#1-8-beyond-minimizing-sse)<br>
+[1-9 Data Transformations](#1-9-data-transformations)<br>
+[1-10 Alternating Least Square (ALS)](#1-10-alternating-least-square)<br>
 
 ## 1-1 Summerizing a sample
 How can we summerize a sample? We first use simple statistics:
@@ -108,7 +123,7 @@ is the *fitted* value of the $i$'th observation.
 
 We start down this road by working through the algebra of *linear regression*.
 
-## 1-4 Ordinary least squares: Solution
+## 1-4 Ordinary least squares
 
 The vector $\hat{\beta}$ that minimizes SSE is given by
 
@@ -145,7 +160,7 @@ ________________________________________________________________________________
 </details>
 
 
-## 1-5 Residuals and $R^2$
+## 1-5 Residuals and R2
 
 <details>
 <summary>We show why $R^2=\frac{\sum^n_{i=1}(\hat{Y}_i-\hat{\bar{Y}})^2}{\sum^n_{i=1}(Y_i-\bar{Y})^2}$</summary>
@@ -315,6 +330,8 @@ $$\sum^n_{i=1}\|Y_i-\hat{Y}_i\|$$
 
 Ridge and Lasso are also less vulnerable to outliers.
 
+Very sweet tutorials on [Scikit Learn Doc](https://scikit-learn.org/stable/modules/linear_model.html#ridge-regression)
+
 ## 1-9 Data transformations
 
 + Logarithmic transformations
@@ -361,7 +378,7 @@ $$\tilde{X}_{ij}=\frac{X_{ij}-\bar{X}_j}{\hat{\sigma}_j}$$
 
 This gives all covariate a normalized dispersion.
 
-## 1-10 Alternating Least Square (ALS)
+## 1-10 Alternating Least Square
 
 Let's broaden the scope of this article with an extension from another [Stanford course](http://stanford.edu/~rezab/classes/cme323/S15/notes/lec14.pdf).
 
@@ -419,7 +436,7 @@ Now that we have $X$ and $Y$, we need to compute $R$. Simply predicting $r_{ui} 
 
 While this migth be ok for small datasets, this is clearly not ok for larger ones, so we need instead Distributed ALS, which is detailed in the previously mentionned course.
 
-
+<br>
 # Up Next 
 ------
 
