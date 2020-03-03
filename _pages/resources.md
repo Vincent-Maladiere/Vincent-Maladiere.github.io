@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Resources"
+title: "Tutorials"
 permalink: /resources/
 author_profile: true
 
@@ -8,8 +8,6 @@ author_profile: true
 
 {% include base_path %}
 
-
-# Tutorials
 
 + **Model Based Machine Learning**
 <br> http://www.mbmlbook.com/toc.html
@@ -58,6 +56,7 @@ author_profile: true
 <br>
 
 # Courses 
+-------
 
 ## Statistics & ML
 
@@ -92,6 +91,7 @@ author_profile: true
 <br>
 
 # Papers
+------
 
 ## Vision
 
@@ -109,6 +109,7 @@ author_profile: true
 <br>
 
 # Books
+-------
 
 + **An Introduction to Statistical Learning**
 <br> https://www.dropbox.com/s/1puqrqqgzng16tb/ISLR%20Seventh%20Printing.pdf?dl=0
