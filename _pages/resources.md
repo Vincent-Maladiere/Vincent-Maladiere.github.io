@@ -8,7 +8,7 @@ author_profile: true
 
 {% include base_path %}
 
-This collections feature cool resources from Statistics to Reinforcement Learning and from tutorials to books.
+This collection features cool resources from Statistics to Reinforcement Learning and from tutorials to books.<br>
 The marker ✅ spots my readings and the number of time I've read them. Feel free to suggest new materials :)
 <br><br>
 
