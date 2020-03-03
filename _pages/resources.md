@@ -9,7 +9,6 @@ author_profile: true
 {% include base_path %}
 
 This collections feature cool resources from Statistics to Reinforcement Learning and from tutorials to books.
-
 The marker ✅ spots my readings and the number of time I've read them.
 <br>
 
