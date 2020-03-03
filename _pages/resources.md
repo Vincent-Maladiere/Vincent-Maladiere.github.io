@@ -9,11 +9,9 @@ author_profile: true
 {% include base_path %}
 
 
-+ **Model Based Machine Learning**
-<br> http://www.mbmlbook.com/toc.html
++ [**Model Based Machine Learning**](http://www.mbmlbook.com/toc.html)
 
-+ **MCMC Sampling** ✅(1)
-<br> https://twiecki.io/blog/2015/11/10/mcmc-sampling/
++ [**MCMC Sampling** ✅(1)](https://twiecki.io/blog/2015/11/10/mcmc-sampling/)
 
 ## DL
 
