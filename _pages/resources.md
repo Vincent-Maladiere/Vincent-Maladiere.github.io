@@ -15,36 +15,36 @@ The marker ✅ spots my readings and the number of time I've read them. Feel fre
 # Tutorials
 -----
 
-+ [**Model Based Machine Learning**](http://www.mbmlbook.com/toc.html)(mbmlbook.com)
++ [**Model Based Machine Learning**](http://www.mbmlbook.com/toc.html) (mbmlbook.com)
 
-+ [**MCMC Sampling**](https://twiecki.io/blog/2015/11/10/mcmc-sampling/)(twiecki.io) ✅(1)
++ [**MCMC Sampling**](https://twiecki.io/blog/2015/11/10/mcmc-sampling/) (twiecki.io) ✅(1)
 
 ## DL
 
-+ [**Deep Learning Tutorial for Beginner**](https://www.kaggle.com/kanncaa1/deep-learning-tutorial-for-beginners)(kaggle.com/kanncaa1) ✅(1)
++ [**Deep Learning Tutorial for Beginner**](https://www.kaggle.com/kanncaa1/deep-learning-tutorial-for-beginners) (kaggle.com/kanncaa1) ✅(1)
      <br> - [Cross entropy](https://peterroelants.github.io/posts/cross-entropy-softmax/)
      <br> - [Backpropagation and Gradiants](http://cs231n.stanford.edu/slides/2018/cs231n_2018_ds02.pdf)
      <br> - [Yes you should understand backprop](https://medium.com/@karpathy/yes-you-should-understand-backprop-e2f06eab496b)
 
-+ [**PyTorch Tutorial for Deep Learning Lovers**](https://www.kaggle.com/kanncaa1/pytorch-tutorial-for-deep-learning-lovers)(kaggle.com/kanncaa1) ✅(1)
++ [**PyTorch Tutorial for Deep Learning Lovers**](https://www.kaggle.com/kanncaa1/pytorch-tutorial-for-deep-learning-lovers) (kaggle.com/kanncaa1) ✅(1)
 
-+ [**Recurrent Neural Network with Pytorch**](https://www.kaggle.com/kanncaa1/recurrent-neural-network-with-pytorch)(kaggle.com/kanncaa1) ✅(1)
++ [**Recurrent Neural Network with Pytorch**](https://www.kaggle.com/kanncaa1/recurrent-neural-network-with-pytorch) (kaggle.com/kanncaa1) ✅(1)
 
 ## Bayesians
 
-+ [**Bayesian A/B testing**](https://www.evanmiller.org/bayesian-ab-testing.html)(evenmiller.org) ✅(1)
++ [**Bayesian A/B testing**](https://www.evanmiller.org/bayesian-ab-testing.html) (evenmiller.org) ✅(1)
 
-+ [**Probabilistic Programming & Bayesian Method**](https://github.com/Vincent-Maladiere/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers)
++ [**Probabilistic Programming & Bayesian Method**](https://github.com/Vincent-Maladiere/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers) (github.com/CamDavidsonPilon)
 
 ## GPs
 
-+ [**Gaussian Processes, not quite for dummies**](https://yugeten.github.io/posts/2019/09/GP/)(yugeten.github.io) ✅(1)
++ [**Gaussian Processes, not quite for dummies**](https://yugeten.github.io/posts/2019/09/GP/) (yugeten.github.io) ✅(1)
 
-+ [**A hands on GPs regression**](https://github.com/dfm/gp/blob/master/worksheet.ipynb)(github.com/dfm)
++ [**A hands on GPs regression**](https://github.com/dfm/gp/blob/master/worksheet.ipynb) (github.com/dfm)
 
 ## Quant
 
-+ [**Trading Strategies**](https://colab.research.google.com/drive/1FzLCI0AO3c7A4bp9Fi01UwXeoc7BN8sW#scrollTo=-SBhFpqZiEfx)(colab.research.google.com)
++ [**Trading Strategies**](https://colab.research.google.com/drive/1FzLCI0AO3c7A4bp9Fi01UwXeoc7BN8sW#scrollTo=-SBhFpqZiEfx) (colab.research.google.com)
 
 + [**RNN for Financial Prediction**](https://chandlerzuo.github.io/blog/2017/11/darnn) (chandlerzuo.github.io, PyTorch)
 
@@ -63,17 +63,17 @@ The marker ✅ spots my readings and the number of time I've read them. Feel fre
 
 ## DL
 
-+ [**CNN**](http://cs231n.github.io/)(CS231n, PyTorch)
++ [**CNN**](http://cs231n.github.io/) (CS231n, PyTorch)
 
-+ [**Practical Deep Learning**](https://course.fast.ai/)(fast.ai, PyTorch)
++ [**Practical Deep Learning**](https://course.fast.ai/) (fast.ai, PyTorch)
 
-+ [**NLP**](http://web.stanford.edu/class/cs224n/)(CS224n)
++ [**NLP**](http://web.stanford.edu/class/cs224n/) (CS224n)
 
 ## RL
 
-+ [**Modern Recommendation for Advanced Practitioners**](https://github.com/thibaultallart/bandit-reco)(github.com/thibaultallart, Keras)
++ [**Modern Recommendation for Advanced Practitioners**](https://github.com/thibaultallart/bandit-reco) (github.com/thibaultallart, Keras)
 
-+ [**Telecom ParisTech AI and e-commerce course (IA316)**](https://github.com/thibaultallart/IA316-2020)(github.com/thibaultallart, Keras)
++ [**Telecom ParisTech AI and e-commerce course (IA316)**](https://github.com/thibaultallart/IA316-2020) (github.com/thibaultallart, Keras)
 
 <br>
 
