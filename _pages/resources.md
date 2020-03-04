@@ -15,30 +15,30 @@ The marker ✅ spots my readings and the number of time I've read them. Feel fre
 # Tutorials
 -----
 
-+ [**Model Based Machine Learning**](http://www.mbmlbook.com/toc.html)
++ [**Model Based Machine Learning**](http://www.mbmlbook.com/toc.html)(mbmlbook.com)
 
-+ [**MCMC Sampling** ✅(1)](https://twiecki.io/blog/2015/11/10/mcmc-sampling/)
++ [**MCMC Sampling**](https://twiecki.io/blog/2015/11/10/mcmc-sampling/)(twiecki.io) ✅(1)
 
 ## DL
 
-+ [**Deep Learning Tutorial for Beginner** ✅(1)](https://www.kaggle.com/kanncaa1/deep-learning-tutorial-for-beginners)
++ [**Deep Learning Tutorial for Beginner**](https://www.kaggle.com/kanncaa1/deep-learning-tutorial-for-beginners)(Kaggle) ✅(1)
      <br> - [Cross entropy](https://peterroelants.github.io/posts/cross-entropy-softmax/)
      <br> - [Backpropagation and Gradiants](http://cs231n.stanford.edu/slides/2018/cs231n_2018_ds02.pdf)
      <br> - [Yes you should understand backprop](https://medium.com/@karpathy/yes-you-should-understand-backprop-e2f06eab496b)
 
-+ [**PyTorch Tutorial for Deep Learning Lovers**](https://www.kaggle.com/kanncaa1/pytorch-tutorial-for-deep-learning-lovers)
++ [**PyTorch Tutorial for Deep Learning Lovers**](https://www.kaggle.com/kanncaa1/pytorch-tutorial-for-deep-learning-lovers)(Kaggle) ✅(1)
 
-+ [**Recurrent Neural Network with Pytorch**](https://www.kaggle.com/kanncaa1/recurrent-neural-network-with-pytorch)
++ [**Recurrent Neural Network with Pytorch**](https://www.kaggle.com/kanncaa1/recurrent-neural-network-with-pytorch)(Kaggle) ✅(1)
 
 ## Bayesians
 
-+ [**Bayesian A/B testing** ✅(1)](https://www.evanmiller.org/bayesian-ab-testing.html)
++ [**Bayesian A/B testing**](https://www.evanmiller.org/bayesian-ab-testing.html)(evenmiller.org) ✅(1)
 
 + [**Probabilistic Programming & Bayesian Method**](https://github.com/Vincent-Maladiere/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers)
 
 ## GPs
 
-+ [**Gaussian Processes, not quite for dummies** ✅(1)](https://yugeten.github.io/posts/2019/09/GP/)
++ [**Gaussian Processes, not quite for dummies**](https://yugeten.github.io/posts/2019/09/GP/)(yugeten.github.io) ✅(1)
 
 + [**A hands on GPs regression**](https://github.com/dfm/gp/blob/master/worksheet.ipynb)
 
@@ -46,7 +46,7 @@ The marker ✅ spots my readings and the number of time I've read them. Feel fre
 
 + [**Trading Strategies**](https://colab.research.google.com/drive/1FzLCI0AO3c7A4bp9Fi01UwXeoc7BN8sW#scrollTo=-SBhFpqZiEfx)
 
-+ [**RNN for Financial Prediction** (PyTorch)](https://chandlerzuo.github.io/blog/2017/11/darnn)
++ [**RNN for Financial Prediction**](https://chandlerzuo.github.io/blog/2017/11/darnn) (PyTorch)
 
 <br>
 
@@ -55,25 +55,25 @@ The marker ✅ spots my readings and the number of time I've read them. Feel fre
 
 ## Statistics & ML
 
-+ [**Bayesian** ✅(1)](https://www.dropbox.com/sh/xm781fvzzhrumf9/AADd882B5sO3jXSBxnxH9dt3a?dl=0)
++ [**Bayesian**](https://www.dropbox.com/sh/xm781fvzzhrumf9/AADd882B5sO3jXSBxnxH9dt3a?dl=0) ✅(1)
 
-+ [**Stochastic methods** ✅(1)](https://www.dropbox.com/sh/kz9cmoziy5hfrk7/AABe0MfCRAPRtZ90BBmRftV4a?dl=0)
++ [**Stochastic methods**](https://www.dropbox.com/sh/kz9cmoziy5hfrk7/AABe0MfCRAPRtZ90BBmRftV4a?dl=0) ✅(1)
 
 + [**Small Data**](https://www.dropbox.com/sh/x9bvj0v3rhct9po/AAAJAirKg-_gynqXAIdFbwcoa?dl=0)
 
 ## DL
 
-+ [**CNN** (PyTorch)](http://cs231n.github.io/)
++ [**CNN**](http://cs231n.github.io/)(CS231n, PyTorch)
 
-+ [**Practical Deep Learning** (PyTorch)](https://course.fast.ai/)
++ [**Practical Deep Learning**](https://course.fast.ai/)(fast.ai, PyTorch)
 
-+ [**NLP**](http://web.stanford.edu/class/cs224n/)
++ [**NLP**](http://web.stanford.edu/class/cs224n/)(CS224n)
 
 ## RL
 
-+ [**Modern Recommendation for Advanced Practitioners** (Keras)](https://github.com/thibaultallart/bandit-reco)
++ [**Modern Recommendation for Advanced Practitioners**](https://github.com/thibaultallart/bandit-reco)(github.com/thibaultallart, Keras)
 
-+ [**Telecom ParisTech AI and e-commerce course (IA316)** (Keras)](https://github.com/thibaultallart/IA316-2020)
++ [**Telecom ParisTech AI and e-commerce course (IA316)**](https://github.com/thibaultallart/IA316-2020)(github.com/thibaultallart, Keras)
 
 <br>
 
@@ -88,7 +88,7 @@ The marker ✅ spots my readings and the number of time I've read them. Feel fre
 
 + [**Combinatorial-Bandit Algorithm for Bid / Budget Optimization**](https://www.dropbox.com/s/eagtc15dg0dm3l3/Combinatorial-Bandit%20Algorithm%20for%20Bid%20Budget%20Optimization.pdf?dl=0)
 
-+ [**Logged Bandit Feedback Techniques for Targeting Optimization**](https://www.dropbox.com/s/7tpjioxvwoexulz/Logged%20Bandit%20Feedback%20Techniques%20for%20Targeting%20Optimization.pdf?dl=0)
++ [**Logged Bandit Feedback Techniques for Targeting Optimization**](https://www.dropbox.com/s/7tpjioxvwoexulz/Logged%20Bandit%20Feedback%20Techniques%20for%20Targeting%20Optimization.pdf?dl=0) ✅(1)
 
 <br>
 
