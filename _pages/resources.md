@@ -21,14 +21,14 @@ The marker ✅ spots my readings and the number of time I've read them. Feel fre
 
 ## DL
 
-+ [**Deep Learning Tutorial for Beginner**](https://www.kaggle.com/kanncaa1/deep-learning-tutorial-for-beginners)(Kaggle) ✅(1)
++ [**Deep Learning Tutorial for Beginner**](https://www.kaggle.com/kanncaa1/deep-learning-tutorial-for-beginners)(kaggle.com/kanncaa1) ✅(1)
      <br> - [Cross entropy](https://peterroelants.github.io/posts/cross-entropy-softmax/)
      <br> - [Backpropagation and Gradiants](http://cs231n.stanford.edu/slides/2018/cs231n_2018_ds02.pdf)
      <br> - [Yes you should understand backprop](https://medium.com/@karpathy/yes-you-should-understand-backprop-e2f06eab496b)
 
-+ [**PyTorch Tutorial for Deep Learning Lovers**](https://www.kaggle.com/kanncaa1/pytorch-tutorial-for-deep-learning-lovers)(Kaggle) ✅(1)
++ [**PyTorch Tutorial for Deep Learning Lovers**](https://www.kaggle.com/kanncaa1/pytorch-tutorial-for-deep-learning-lovers)(kaggle.com/kanncaa1) ✅(1)
 
-+ [**Recurrent Neural Network with Pytorch**](https://www.kaggle.com/kanncaa1/recurrent-neural-network-with-pytorch)(Kaggle) ✅(1)
++ [**Recurrent Neural Network with Pytorch**](https://www.kaggle.com/kanncaa1/recurrent-neural-network-with-pytorch)(kaggle.com/kanncaa1) ✅(1)
 
 ## Bayesians
 
@@ -40,13 +40,13 @@ The marker ✅ spots my readings and the number of time I've read them. Feel fre
 
 + [**Gaussian Processes, not quite for dummies**](https://yugeten.github.io/posts/2019/09/GP/)(yugeten.github.io) ✅(1)
 
-+ [**A hands on GPs regression**](https://github.com/dfm/gp/blob/master/worksheet.ipynb)
++ [**A hands on GPs regression**](https://github.com/dfm/gp/blob/master/worksheet.ipynb)(github.com/dfm)
 
 ## Quant
 
-+ [**Trading Strategies**](https://colab.research.google.com/drive/1FzLCI0AO3c7A4bp9Fi01UwXeoc7BN8sW#scrollTo=-SBhFpqZiEfx)
++ [**Trading Strategies**](https://colab.research.google.com/drive/1FzLCI0AO3c7A4bp9Fi01UwXeoc7BN8sW#scrollTo=-SBhFpqZiEfx)(colab.research.google.com)
 
-+ [**RNN for Financial Prediction**](https://chandlerzuo.github.io/blog/2017/11/darnn) (PyTorch)
++ [**RNN for Financial Prediction**](https://chandlerzuo.github.io/blog/2017/11/darnn) (chandlerzuo.github.io, PyTorch)
 
 <br>
 
