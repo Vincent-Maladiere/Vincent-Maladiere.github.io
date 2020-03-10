@@ -63,13 +63,15 @@ The marker ✅ spots my readings and the number of time I've read them. Feel fre
 
 ## DL
 
-+ [**CNN**](http://cs231n.github.io/) (CS231n, PyTorch)
++ [**CS231n Convolutional Neural Networks for Visual Recognition**](http://cs231n.github.io/) (cs231n.github.io, PyTorch)
 
 + [**Practical Deep Learning**](https://course.fast.ai/) (fast.ai, PyTorch)
 
-+ [**NLP**](http://web.stanford.edu/class/cs224n/) (CS224n)
++ [**CS224n: Natural Language Processing with Deep Learning**](http://web.stanford.edu/class/cs224n/) (web.stanford.edu)
 
 ## RL
+
++ [**CS234: Reinforcement Learning Winter 2020**](http://web.stanford.edu/class/cs234/schedule.html) (web.stanford.edu)
 
 + [**Modern Recommendation for Advanced Practitioners**](https://github.com/thibaultallart/bandit-reco) (github.com/thibaultallart, Keras)
 
