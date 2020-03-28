@@ -64,6 +64,8 @@ The marker ✅ spots my readings and the number of time I've read them. Feel fre
 ## DL
 
 + [**CS231n Convolutional Neural Networks for Visual Recognition**](http://cs231n.github.io/) (cs231n.github.io, PyTorch)
+    <br> - [Regularization and variable selection via the elastic net](http://web.stanford.edu/~hastie/Papers/B67.2%20%282005%29%20301-320%20Zou%20&%20Hastie.pdf) 
+    <br> - [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift](https://arxiv.org/pdf/1502.03167.pdf) 
 
 + [**Practical Deep Learning**](https://course.fast.ai/) (fast.ai, PyTorch)
 
