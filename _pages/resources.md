@@ -8,8 +8,8 @@ author_profile: true
 
 {% include base_path %}
 
-This collection features cool resources from Statistics to Reinforcement Learning and from tutorials to books.<br>
-The marker ✅ spots my readings and the number of time I've read them. Feel free to suggest new materials :)
+This collection features cool resources that I have enjoyed, from Statistics to Reinforcement Learning and from tutorials to books.<br>
+Feel free to suggest new materials :)
 <br><br>
 
 # Tutorials
@@ -17,28 +17,28 @@ The marker ✅ spots my readings and the number of time I've read them. Feel fre
 
 + [**Model Based Machine Learning**](http://www.mbmlbook.com/toc.html) (mbmlbook.com)
 
-+ [**MCMC Sampling**](https://twiecki.io/blog/2015/11/10/mcmc-sampling/) (twiecki.io) ✅(1)
++ [**MCMC Sampling**](https://twiecki.io/blog/2015/11/10/mcmc-sampling/) (twiecki.io)
 
-## DL
+## Deep Learning
 
-+ [**Deep Learning Tutorial for Beginner**](https://www.kaggle.com/kanncaa1/deep-learning-tutorial-for-beginners) (kaggle.com/kanncaa1) ✅(1)
++ [**Deep Learning Tutorial for Beginner**](https://www.kaggle.com/kanncaa1/deep-learning-tutorial-for-beginners) (kaggle.com/kanncaa1)
      <br> - [Cross entropy](https://peterroelants.github.io/posts/cross-entropy-softmax/)
      <br> - [Backpropagation and Gradiants](http://cs231n.stanford.edu/slides/2018/cs231n_2018_ds02.pdf)
      <br> - [Yes you should understand backprop](https://medium.com/@karpathy/yes-you-should-understand-backprop-e2f06eab496b)
 
-+ [**PyTorch Tutorial for Deep Learning Lovers**](https://www.kaggle.com/kanncaa1/pytorch-tutorial-for-deep-learning-lovers) (kaggle.com/kanncaa1) ✅(1)
++ [**PyTorch Tutorial for Deep Learning Lovers**](https://www.kaggle.com/kanncaa1/pytorch-tutorial-for-deep-learning-lovers) (kaggle.com/kanncaa1)
 
-+ [**Recurrent Neural Network with Pytorch**](https://www.kaggle.com/kanncaa1/recurrent-neural-network-with-pytorch) (kaggle.com/kanncaa1) ✅(1)
++ [**Recurrent Neural Network with Pytorch**](https://www.kaggle.com/kanncaa1/recurrent-neural-network-with-pytorch) (kaggle.com/kanncaa1)
 
 ## Bayesians
 
-+ [**Bayesian A/B testing**](https://www.evanmiller.org/bayesian-ab-testing.html) (evenmiller.org) ✅(1)
++ [**Bayesian A/B testing**](https://www.evanmiller.org/bayesian-ab-testing.html) (evenmiller.org)
 
 + [**Probabilistic Programming & Bayesian Method**](https://github.com/Vincent-Maladiere/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers) (github.com/CamDavidsonPilon)
 
-## GPs
+## Gaussian Processes
 
-+ [**Gaussian Processes, not quite for dummies**](https://yugeten.github.io/posts/2019/09/GP/) (yugeten.github.io) ✅(1)
++ [**Gaussian Processes, not quite for dummies**](https://yugeten.github.io/posts/2019/09/GP/) (yugeten.github.io)
 
 + [**A hands on GPs regression**](https://github.com/dfm/gp/blob/master/worksheet.ipynb) (github.com/dfm)
 
@@ -55,9 +55,9 @@ The marker ✅ spots my readings and the number of time I've read them. Feel fre
 
 ## Statistics & ML
 
-+ [**Bayesian**](https://www.dropbox.com/sh/xm781fvzzhrumf9/AADd882B5sO3jXSBxnxH9dt3a?dl=0) ✅(1)
++ [**Bayesian**](https://www.dropbox.com/sh/xm781fvzzhrumf9/AADd882B5sO3jXSBxnxH9dt3a?dl=0)
 
-+ [**Stochastic methods**](https://www.dropbox.com/sh/kz9cmoziy5hfrk7/AABe0MfCRAPRtZ90BBmRftV4a?dl=0) ✅(1)
++ [**Stochastic methods**](https://www.dropbox.com/sh/kz9cmoziy5hfrk7/AABe0MfCRAPRtZ90BBmRftV4a?dl=0)
 
 + [**Small Data**](https://www.dropbox.com/sh/x9bvj0v3rhct9po/AAAJAirKg-_gynqXAIdFbwcoa?dl=0)
 
@@ -92,7 +92,7 @@ The marker ✅ spots my readings and the number of time I've read them. Feel fre
 
 + [**Combinatorial-Bandit Algorithm for Bid / Budget Optimization**](https://www.dropbox.com/s/eagtc15dg0dm3l3/Combinatorial-Bandit%20Algorithm%20for%20Bid%20Budget%20Optimization.pdf?dl=0)
 
-+ [**Logged Bandit Feedback Techniques for Targeting Optimization**](https://www.dropbox.com/s/7tpjioxvwoexulz/Logged%20Bandit%20Feedback%20Techniques%20for%20Targeting%20Optimization.pdf?dl=0) ✅(1)
++ [**Logged Bandit Feedback Techniques for Targeting Optimization**](https://www.dropbox.com/s/7tpjioxvwoexulz/Logged%20Bandit%20Feedback%20Techniques%20for%20Targeting%20Optimization.pdf?dl=0)
 
 <br>
 
