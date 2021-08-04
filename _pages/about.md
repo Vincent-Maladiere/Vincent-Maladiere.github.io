@@ -25,5 +25,5 @@ Both fields have something in common: statistics and machine learning, where all
 
 This blog is entirely focus on the magic part.
 
-You can download a pdf version of my CV [here](https://vincent-maladiere.github.io/files/CV.pdf)
+You can download a pdf version of my CV [here](https://vincent-maladiere.github.io/files/vincent_maladiere_resume.pdf)
 
