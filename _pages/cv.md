@@ -73,4 +73,4 @@ Project
     * [Quentin Durantay, CTO & CPO](https://www.linkedin.com/in/qdurantay/)
 
 <br>
-You can download the pdf version of my CV [here](https://vincent-maladiere.github.io/files/CV.pdf).
+You can download the pdf version of my CV [here](https://vincent-maladiere.github.io/files/vincent_maladiere_resume.pdf).
