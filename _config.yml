@@ -10,10 +10,10 @@ locale                   : "en-US"
 title                    : "Vincent Maladière"
 title_separator          : "-"
 name                     : &name "Vincent Maladière"
-description              : &description "Data Scientist at Spendesk. Co-Founder & Machine Learning at Chasseur Particulier"
-url                      : https://vincent-maladiere.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : &description "Co-Founder & Machine Learning at Avalanche"
+url                      : https://maladiere.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "Vincent-Maladiere/Vincent-Maladiere.github.io"
+repository               : "Vincent-Maladiere/maladiere.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -23,7 +23,7 @@ talkmap_link             : false #change to true to add link to talkmap on talks
 comments:
   provider               : "disqus" # , "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            : "vincent-maladiere"
+    shortname            : "maladiere"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -82,9 +82,9 @@ analytics:
 author:
   name             : "Vincent Maladière"
   avatar           : "profile.png"
-  bio              : "Data Scientist at Spendesk. Co-Founder & Machine Learning at Chasseur Particulier."
+  bio              : "Co-Founder & Machine Learning at Avalanche."
   location         : "Paris, France"
-  Spendesk           : "https://www.spendesk.com/"
+  ex-Spendesk           : "https://www.spendesk.com/"
   Chasseur Particulier : "https://www.chasseurparticulier.com"
   employer         : "Spendesk, Chasseur Particulier" 
   pubmed           : 
