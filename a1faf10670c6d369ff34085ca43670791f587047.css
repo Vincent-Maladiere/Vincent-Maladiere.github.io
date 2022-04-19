@@ -1201,19 +1201,6 @@ table > tr {
 .notion-dark-theme .token.deleted {
     color: red
     }
-/*!********************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/client/css/react-pdf.css ***!
-  \********************************************************************************/
-.react-pdf__Page {
-    padding-bottom: 8px
-    }
-.react-pdf__Page__textContent {
-    position: absolute;
-    top: 0 !important;
-    left: 0 !important;
-    transform: none !important;
-    cursor: text
-    }
 /*!***********************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/react-day-picker/lib/style.css ***!
   \***********************************************************************************************/
@@ -1506,4 +1493,17 @@ table > tr {
         width: 32px;
         height: 32px
         }
+    }
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/client/css/react-pdf.css ***!
+  \********************************************************************************/
+.react-pdf__Page {
+    padding-bottom: 8px
+    }
+.react-pdf__Page__textContent {
+    position: absolute;
+    top: 0 !important;
+    left: 0 !important;
+    transform: none !important;
+    cursor: text
     }
