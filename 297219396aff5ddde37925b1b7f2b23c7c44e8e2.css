@@ -640,6 +640,53 @@ html.notion-front-page .notion-app-inner {
         }
     }
 /* ==================================================================== */
+/* input range
+/* ==================================================================== */
+input[type="range"] {
+    /* Hide the default slider so we can customize */
+    -webkit-appearance: none;
+    background: transparent
+    }
+/* Webkit (Chrome, Safari, etc.) */
+input[type="range"]::-webkit-slider-thumb {
+    /* Hide the default slider thumb so we can customize */
+    -webkit-appearance: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -4px
+    }
+/* Firefox */
+input[type="range"]::-moz-range-thumb {
+    /* Hide the default slider thumb so we can customize */
+    -webkit-appearance: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -4px
+    }
+/* Webkit (Chrome, Safari, etc.) */
+input[type="range"]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 10px;
+    cursor: pointer
+    }
+/* Firefox */
+input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 6px;
+    border-radius: 10px;
+    cursor: pointer
+    }
+/* ==================================================================== */
 /* Front pages.
 /* ==================================================================== */
 .notion-quote {
