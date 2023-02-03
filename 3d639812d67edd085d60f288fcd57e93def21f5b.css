@@ -576,7 +576,7 @@ html.notion-front-page .notion-app-inner {
 /* ==================================================================== */
 /* Contenteditable placeholders.
 /* ==================================================================== */
-[contenteditable]:empty:after, .forcePlaceholder:after {
+[contenteditable]:empty:after {
     content: attr(placeholder)
     }
 /* ==================================================================== */
@@ -663,7 +663,8 @@ html.notion-front-page .notion-app-inner {
 /* ==================================================================== */
 .notion-shimmer {
     overflow: hidden;
-    position: relative
+    position: relative;
+    z-index: 0
     }
 .notion-shimmer::before {
     content: "";
