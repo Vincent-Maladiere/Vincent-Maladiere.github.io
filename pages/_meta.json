@@ -1,0 +1,42 @@
+{
+    "proba-ml": {
+        "title": "Proba ML",
+        "type": "page"
+    },
+    "apply-2022": {
+        "title": "Apply Conf 2022",
+        "type": "page"
+    },
+    "contributing-scikit-learn": {
+        "title": "Contributing to scikit-learn",
+        "type": "page"
+    },
+    "about": {
+        "title": "About",
+        "type": "page",
+        "href": "/about"
+    },
+    "contact": {
+        "title": "Contact",
+        "type": "page",
+        "href": "mailto:maladiere.vincent@gmail.com"
+    },
+    "axa-2022": {
+        "display": "hidden"
+    },
+    "euroscipy-2022": {
+        "display": "hidden"
+    },
+    "euroscipy-2023": {
+        "display": "hidden"
+    },
+    "inria-2022": {
+        "display": "hidden"
+    },
+    "jupytercon-2023": {
+        "display": "hidden"
+    },
+    "xhec": {
+        "display": "hidden"
+    }
+}

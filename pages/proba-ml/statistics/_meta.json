@@ -1,0 +1,9 @@
+{
+    "intro": "4.1 Intro",
+    "maximum-likelihood-estimation": "4.2 Maximum Likelihood Estimation",
+    "empirical-risk-minimization": "4.3 Empirical Risk Miminization",
+    "other-estimation-methods": "4.4 Other Estimation Methods",
+    "regularization": "4.5 Regularization",
+    "bayesian-statistics": "4.6 Bayesian Statistics",
+    "frequentist-statistics": "4.7 Frequentist Statistics"
+}

@@ -1,0 +1,7 @@
+{
+    "intro": "17. Intro",
+    "mercel-kernels": "17.1 Mercel Kernels",
+    "gaussian-processes": "17.2 Gaussian Processes",
+    "support-vector-machines": "17.3 Support vector machines (SVM)",
+    "sparse-vector-machines": "17.4 Sparse Vector Machines"
+}

@@ -1,0 +1,8 @@
+{
+    "intro": "14.1 Intro",
+    "common-layers": "14.2 Common Layers",
+    "common-architectures": "14.3 Common Architectures",
+    "other-forms-of-convolution": "14.4 Other Forms of Convolution",
+    "other-discriminative-vision-tasks": "14.5 Other Discriminative Vision Tasks",
+    "generating-images": "14.6 Generating Images"
+}

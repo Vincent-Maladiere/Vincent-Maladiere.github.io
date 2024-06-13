@@ -1,0 +1,8 @@
+{
+    "intro": "13.1 Intro",
+    "multilayer-perceptrons": "13.2 Multilayer Perceptron",
+    "backpropagation": "13.3 Backpropagation",
+    "training-neural-nets": "13.4 Training Neural Networks",
+    "regularization": "13.5 Regularization",
+    "other-kinds-of-ffn": "13.6 Other kinds of feedforward networks"
+}

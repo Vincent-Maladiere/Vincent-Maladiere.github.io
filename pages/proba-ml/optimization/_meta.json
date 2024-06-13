@@ -1,0 +1,9 @@
+{
+    "intro": "8.1 Intro",
+    "first-order-methods": "8.2 First-Order Methods",
+    "second-order-methods": "8.3 Second-Order Methods",
+    "stochastic-gradient-descent": "8.4 Stochastic Gradient Descent",
+    "constrained-optimization": "8.5 Constrained Optimization",
+    "proximal-gradient-methods": "8.6 Proximal Gradient Methods",
+    "bound-optimization": "8.7 Bound Optimization"
+}

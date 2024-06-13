@@ -1,0 +1,3 @@
+# 22. Recommender Systems
+
+Recommender systems recommend **items** (such as movies, books, ads) to **users** based on various information, such as their past viewing / purchasing behavior (e.g. which movies they rated high or low, which ads they clicked on), as well as optional “side information” such as demographics about the user, or information about the content of the item (e.g., its title, genre or price).
