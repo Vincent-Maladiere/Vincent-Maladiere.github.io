@@ -1,5 +1,7 @@
 import "../styles/global.css";
 import localfont from "next/font/local";
+import { GoogleAnalytics } from '@next/third-parties/google'
+
 
 const polySans = localfont({
   src: [
@@ -25,6 +27,7 @@ const App = ({ Component, pageProps }) => {
   return (
     <main className={polySans.className}>
       <Component {...pageProps} />
+      <GoogleAnalytics gaId="G-NQ78ZVKXEN" />
     </main>
   );
 };
