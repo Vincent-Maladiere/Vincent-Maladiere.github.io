@@ -1,8 +1,0 @@
-{
-    "classification-and-regression-tree": "18.1 Classification and regression tree (CART)",
-    "ensemble-learning": "18.2 Ensemble Learning",
-    "bagging": "18.3 Bagging",
-    "random-forests": "18.4 Random Forests",
-    "boosting": "18.5 Boosting",
-    "interpreting-tree-ensembles": "18.6 Interpreting Tree Ensembles"
-}

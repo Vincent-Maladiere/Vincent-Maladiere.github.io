@@ -1,8 +1,0 @@
-{
-    "recurrent-neural-nets": "15.2 Recurrent Neural Networks (RNN)",
-    "1d-CNNs": "15.3 1d CNNs",
-    "attention": "15.4 Attention",
-    "transformers": "15.5 Transformers",
-    "efficient-transformers": "15.6 Efficient Transformers",
-    "language-models": "15.7 Language Models"
-}

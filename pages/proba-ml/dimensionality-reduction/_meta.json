@@ -1,8 +1,0 @@
-{
-    "intro": "20. Intro",
-    "principal-component-analysis": "20.1 Principal Component Analysis (PCA)",
-    "factor-analysis": "20.2 Factor Analysis",
-    "autoencoders": "20.3 Autoencoders",
-    "manifold-learning": "20.4 Manifold Learning",
-    "word-embeddings": "20.5 Word Embeddings"
-}

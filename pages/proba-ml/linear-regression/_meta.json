@@ -1,8 +1,0 @@
-{
-    "intro": "11.1 Intro",
-    "least-squares-linear-regression": "11.2 Least Squares Linear Regression",
-    "ridge-regression": "11.3 Ridge Regression",
-    "lasso-regression": "11.4 Lasso Regression",
-    "regression-splines": "11.5 Regression Splines",
-    "robust-linear-regression": "11.6 Robust Linear Regression"
-}

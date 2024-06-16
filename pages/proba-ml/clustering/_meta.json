@@ -1,8 +1,0 @@
-{
-    "intro": "21.1 Intro",
-    "hierarchical-agglomerative-clustering": "21.2 Hierarchical Agglomerative Clustering (HAC)",
-    "kmeans-clustering": "21.3 K-Means Clustering",
-    "mixture-models": "21.4 Clustering using Mixtures Models",
-    "spectral-clustering": "21.5 Spectral Clustering",
-    "biclustering": "21.6 Biclustering"
-}
