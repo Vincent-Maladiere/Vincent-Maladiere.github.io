@@ -16,7 +16,7 @@ These update steps are performed until reaching a stationary point.
 
 The sequence of steps $\{\eta_t\}$ is the learning rate schedule. We describe some methods to pick this.
 
-**8.2.2.1 Constant step size**
+#### 8.2.2.1 Constant step size
 
 The simplest method is to consider $\eta_t=\eta$. However, if set too large the method will fail to converge, and if set too small, the method will converge very slowly.
 
@@ -44,7 +44,7 @@ $$
 
 where $L$ is the Lipschitz constant of the gradient —but this constant is usually unknown.
 
-**8.2.2.2 Line search**
+#### 8.2.2.2 Line search
 
 The optimal step size can be found by solving the optimization:
 
@@ -98,7 +98,7 @@ More generally, the objective around the optimum is locally quadratic, hence the
 
 Line search often exhibits zig-zag paths that are inefficient, instead, we can use conjugate gradient descent.
 
-**8.2.3.1 Conjugate gradient descent**
+#### 8.2.3.1 Conjugate gradient descent
 
 $\bold{u,v}$ are conjugate vectors w.r.t $A$ iff:
 
@@ -142,7 +142,7 @@ $$
 
 ### 8.2.4 Momentum methods
 
-**8.2.4.1 Momentum**
+#### 8.2.4.1 Momentum
 
 This can be implemented as follow:
 
@@ -161,7 +161,7 @@ $$
 \bold{m}_t=\sum_{k=0}^{t-1} \beta^k\bold{g}_{t-k -1}
 $$
 
-**8.2.4.2 Nesterov momentum**
+#### 8.2.4.2 Nesterov momentum
 
 The standard momentum issue is that it may not slow down enough at the bottom of the valley and causes oscillations.
 

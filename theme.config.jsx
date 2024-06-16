@@ -1,7 +1,7 @@
 export default {
   logo: <span>Vincent Maladiere</span>,
   docsRepositoryBase:
-    "https://github.com/Vincent-Maladiere/vincent-maladiere.github.io",
+    "https://github.com/Vincent-Maladiere/vincent-maladiere.github.io/blob/master",
   footer: {
     component: null,
   },
