@@ -1,0 +1,11 @@
+{
+    "home": "Home",
+    "image-processing": "1. Image Processing",
+    "video-io": "2. Video I/O",
+    "2D-features-framework": "3. 2d features framework",
+    "camera-calibration-and-3D-reconstruction": "4. Camera Calibration and 3D reconstruction",
+    "video-analysis": "5. Video Analysis",
+    "object-detection": "6. Object Detection",
+    "machine-learning": "7. Machine Learning",
+    "core-module": "8. Core Module"
+}

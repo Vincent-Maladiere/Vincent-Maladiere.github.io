@@ -4,7 +4,7 @@ const nextConfig = {
   distDir: 'build',
   images: {
     "unoptimized": true,
-  }
+  },
 }
 const withNextra = require("nextra")({
   theme: "nextra-theme-docs",

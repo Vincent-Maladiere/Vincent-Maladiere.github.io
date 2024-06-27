@@ -17,8 +17,8 @@ const Hero = () => {
         <div className="flex flex-col shrink-[5]">
           <h2 className="mb-1">Hey there!</h2>
           <p className="mb-6">
-            I’m Vincent Maladière, leading the product at :probabl., the
-            scikit-learn spin-off. Prior to that, I was a ML research engineer
+            I’m Vincent Maladière, co-founding ML engineer at :probabl., a
+            scikit-learn company. Prior to that, I was a ML research engineer
             at Inria (in France). You can reach me at:
           </p>
 
@@ -48,14 +48,14 @@ const Hero = () => {
           <h3 className="mb-1">I took part in this paper</h3>
           <Link
             key="competing risks"
-            href="https://www.dropbox.com/scl/fi/9m8jqiiw3u3eb6z5xn6tz/Competing_Risks.pdf?rlkey=bgy0cgp2h3p3kcwaql9mqh9sn&st=zyllgc5b&dl=0"
+            href="https://arxiv.org/abs/2406.14085"
           >
             <p className="underline">
               Teaching Models To Survive: Proper Scoring Rule and Stochastic
               Optimization with Competing Risks
             </p>
           </Link>
-          <p>published in ??, 2024 </p>
+          <p>published in arxiv (2024)</p>
           <p>
             We propose a new SOTA model for survival analysis and competing risk
             analysis, trained on a proper scoring rule and plugged into a

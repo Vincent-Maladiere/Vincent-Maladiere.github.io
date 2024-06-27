@@ -11,6 +11,10 @@
         "title": "Contributing to scikit-learn",
         "type": "page"
     },
+    "opencv-tutorial": {
+        "title": "OpenCV Tutorial",
+        "type": "page"
+    },
     "about": {
         "title": "About",
         "type": "page",
