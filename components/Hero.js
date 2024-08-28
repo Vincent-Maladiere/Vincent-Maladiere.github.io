@@ -17,9 +17,11 @@ const Hero = () => {
         <div className="flex flex-col shrink-[5]">
           <h2 className="mb-1">Hey there!</h2>
           <p className="mb-6">
-            I’m Vincent Maladière, co-founding ML engineer at :probabl., a
+            I’m Vincent Maladière, co-Founding ML Engineer at :probabl., a
             scikit-learn company. Prior to that, I was a ML research engineer
-            at Inria (in France). You can reach me at:
+            at Inria (in France). I specialize on survival analysis, causal inference,
+            tabular machine learning, graph neural networks and transformer
+            architectures. You can reach me at:
           </p>
 
           <div className="flex flex-wrap flex-row justify-start gap-2">
