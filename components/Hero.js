@@ -5,25 +5,31 @@ import { socials, libs } from "../lib/data";
 const Hero = () => {
   return (
     <section className="flex flex-col justify-between gap-10">
-      <div className="flex flex-col lg:flex-row item-start photo-card">
+      <div className="flex flex-col 2xl:flex-row item-start photo-card">
         <Image
           alt="profile picture of Vincent Maladiere"
           src="/circle_head.png"
           width={300}
           height={300}
-          className="mb-6 lg:mr-10"
+          className="mb-6 2xl:mr-10"
         />
 
         <div className="flex flex-col shrink-[5]">
           <h2 className="mb-1">Hey there!</h2>
           <p className="mb-6">
-            I’m Vincent Maladière, co-Founding ML Engineer at :probabl., a
-            scikit-learn company. Prior to that, I was a ML research engineer
-            at Inria (in France). I specialize on survival analysis, causal inference,
-            tabular machine learning, graph neural networks and transformer
-            architectures. You can reach me at:
+          I’m Vincent Maladière, an enthusiast of computer science, applied mathematics,
+          and data science.
           </p>
-
+          <p className="mb-6"> 
+          I have developed open-source software and deployed machine learning models in
+          healthcare and fintech companies, and co-authored a paper on survival
+          analysis. I have also taught data science at École Polytechnique and Dauphine.
+          </p>
+          <p className="mb-6"> 
+            I work at Probabl as a co-founding ML engineer, where I develop the skrub
+            and hazardous libraries. You can reach me at:
+          </p>
+          
           <div className="flex flex-wrap flex-row justify-start gap-2">
             {socials.map((l) => (
               <Link key={l.title} href={l.url} className="social-button">
