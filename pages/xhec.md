@@ -5,11 +5,11 @@
 
 ### Exercices
 
-[1. Numpy](/1_numpy.pdf), [solutions](/sol-1.html)
+[1. Numpy](/1_numpy.pdf)
 
-[2. Pandas and scikit-learn](/2_pandas_sklearn.pdf), [solutions](/sol-2.html)
+[2. Pandas and scikit-learn](/2_pandas_sklearn.pdf)
 
-[3. skrub](/3_skrub.pdf), [solutions](/sol-3.html)
+[3. skrub](/3_skrub.pdf)
 
 [4. Classification trees](/4_classification_trees.pdf)
 
