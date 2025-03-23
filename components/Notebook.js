@@ -5,7 +5,7 @@ import { notebooks } from "../lib/data";
 
 const Notebook = () => {
   return (
-    <section className="flex flex-col items-center w-[80%] pb-40">
+    <section className="flex flex-col items-center w-[90%] pb-40">
       <h2 className="mb-1">Notebooks</h2>
       <p className="mb-6">
         Tips and tricks on computer vision, audio and geo-clustering.

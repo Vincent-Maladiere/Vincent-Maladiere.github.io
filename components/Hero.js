@@ -5,16 +5,17 @@ import { socials, libs } from "../lib/data";
 const Hero = () => {
   return (
     <section className="flex flex-col justify-between gap-10">
-      <div className="flex flex-col 2xl:flex-row item-start photo-card">
+      <div className="flex flex-col photo-card">
+      <div className="flex flex-col lg:flex-row item-start gap-10">
         <Image
           alt="profile picture of Vincent Maladiere"
           src="/circle_head.png"
           width={300}
           height={300}
-          className="mb-6 2xl:mr-10"
+          className="mb-6" 
         />
 
-        <div className="flex flex-col shrink-[5]">
+        <div className="flex flex-col ">
           <h2 className="mb-1">Hey there!</h2>
           <p className="mb-6">
           I’m Vincent Maladière, an enthusiast of computer science, applied mathematics,
@@ -26,10 +27,12 @@ const Hero = () => {
           analysis. I have also taught data science at École Polytechnique and Dauphine.
           </p>
           <p className="mb-6"> 
-            I work at Probabl as a co-founding ML engineer, where I develop the skrub
-            and hazardous libraries. You can reach me at:
+            I work at Probabl as a co-founding research engineer, where I develop the
+            skrub and hazardous libraries. You can reach me at:
           </p>
-          
+        
+        </div>
+        </div>
           <div className="flex flex-wrap flex-row justify-start gap-2">
             {socials.map((l) => (
               <Link key={l.title} href={l.url} className="social-button">
@@ -37,12 +40,11 @@ const Hero = () => {
               </Link>
             ))}
           </div>
-        </div>
       </div>
 
       <div className="flex flex-col gap-3">
         <h3 className="text-center mb-1">I contributed to</h3>
-        <div className="w-full flex-wrap md:flex-nowrap flex justify-center items-center align-center gap-5 md:gap-[20%]">
+        <div className="w-full flex-wrap md:flex-nowrap flex justify-center items-center align-center gap-5 md:gap-[10%]">
           {libs.map((l) => (
             <Link key={l.title} href={l.url}>
               <Image alt={l.title} src={l.img} width={150} height={150} />
@@ -53,17 +55,15 @@ const Hero = () => {
 
       <div className="flex gap-5">
         <div className="paper-callout">
-          <h3 className="mb-1">I took part in this paper</h3>
+          <h3 className="mb-1">I co-authored a research paper published in AISTATS 2025</h3>
           <Link
             key="competing risks"
-            href="https://arxiv.org/abs/2406.14085"
+            href="https://hal.science/hal-04617672"
           >
             <p className="underline">
-              Teaching Models To Survive: Proper Scoring Rule and Stochastic
-              Optimization with Competing Risks
+            Survival Models: Proper Scoring Rule and Stochastic Optimization with Competing Risks
             </p>
           </Link>
-          <p>published in arxiv (2024)</p>
           <p>
             We propose a new SOTA model for survival analysis and competing risk
             analysis, trained on a proper scoring rule and plugged into a
